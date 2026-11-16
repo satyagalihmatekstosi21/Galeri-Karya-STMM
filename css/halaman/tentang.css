@@ -1,0 +1,90 @@
+/* ==========================================================
+   Gaya khusus layar Tentang - Galeri Karya STMM
+   ========================================================== */
+
+/* Kartu identitas brand */
+.tentang-hero {
+  background: var(--warna-latar-lembut);
+  border-radius: var(--sudut-besar);
+  padding: var(--jarak-5) var(--jarak-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--jarak-2);
+}
+
+.tentang-hero__logo {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.tentang-hero__judul {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--warna-tua);
+  line-height: 1.2;
+}
+
+.tentang-hero__tagline {
+  font-size: 13px;
+  color: var(--warna-teks-isi);
+  line-height: 1.45;
+  max-width: 340px;
+}
+
+/* Tombol ajukan karya */
+.tombol--penuh-lebar {
+  width: 100%;
+}
+
+/* Grup menu navigasi informasi */
+.tentang-menu {
+  background: var(--warna-putih);
+  border: 1px solid var(--warna-garis);
+  border-radius: var(--sudut-besar);
+  overflow: hidden;
+}
+
+.tentang-menu__item {
+  width: 100%;
+  border: none;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px var(--jarak-4);
+  font-family: inherit;
+  font-size: var(--teks-isi);
+  font-weight: 700;
+  color: var(--warna-teks);
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px solid var(--warna-garis);
+  transition: background-color 0.15s ease;
+}
+
+.tentang-menu__item:last-child {
+  border-bottom: none;
+}
+
+.tentang-menu__item:hover {
+  background: var(--warna-latar-lembut);
+}
+
+.tentang-menu__ikon {
+  color: var(--warna-redup);
+  display: flex;
+  align-items: center;
+}
+
+/* Catatan kaki */
+.tentang-footer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--warna-redup);
+  margin-top: calc(var(--jarak-1) * -1);
+  margin-bottom: var(--jarak-2);
+}

@@ -1,0 +1,37 @@
+/* Tim 1 · Gaya khusus layar Beranda */
+
+.unggulan {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--warna-teks);
+  text-decoration: none;
+}
+.unggulan__gambar {
+  position: relative;
+  height: 196px;
+  border-radius: var(--sudut-besar);
+  background: var(--warna-tua);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.unggulan__gambar img { width: 100%; height: 100%; object-fit: cover; }
+.unggulan__gambar .label { position: absolute; left: var(--jarak-3); top: var(--jarak-3); }
+.unggulan__putar {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--sudut-pil);
+  background: var(--warna-putih);
+  color: var(--warna-tua);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.unggulan__judul { font-size: var(--teks-karya); font-weight: 800; line-height: 1.3; }
+
+/* Chip kategori bisa digeser ke samping, tidak turun baris */
+.deret-chip--geser { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+.deret-chip--geser .chip { flex: none; }

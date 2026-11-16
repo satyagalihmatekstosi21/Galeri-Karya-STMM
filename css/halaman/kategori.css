@@ -1,0 +1,51 @@
+/* ==========================================================
+   Gaya khusus layar Kategori — Galeri Karya STMM
+   ========================================================== */
+
+/* Bilah info jumlah karya & pengurutan */
+.kategori-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: calc(var(--jarak-1) * -1);
+}
+
+.kategori-bar__info {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--warna-redup);
+}
+
+.kategori-urutkan {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.kategori-urutkan__select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--warna-utama);
+  padding: 4px 18px 4px 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.kategori-urutkan__ikon {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  color: var(--warna-utama);
+  display: flex;
+  align-items: center;
+}
+
+/* Transisi halus saat chip dipilih */
+.deret-chip .chip {
+  transition: background-color 0.15s ease, color 0.15s ease;
+}

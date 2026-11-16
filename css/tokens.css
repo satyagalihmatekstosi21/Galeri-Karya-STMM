@@ -1,0 +1,46 @@
+/* ==========================================================
+   DESIGN TOKEN — Galeri Karya STMM
+   Nilai dasar dari style guide (lihat kanvas desain hi-fi).
+   File BERSAMA: hanya dosen/integrator yang boleh mengubah.
+   ========================================================== */
+
+:root {
+  /* Warna */
+  --warna-utama: #0179BB;
+  --warna-tua: #005A92;
+  --warna-aksen: #EDBB1A;
+  --warna-teks: #1E293B;
+  --warna-teks-isi: #334155;
+  --warna-redup: #64748B;
+  --warna-latar: #EEF6FC;
+  --warna-latar-lembut: #F4F8FB;
+  --warna-garis: #E2E8F0;
+  --warna-putih: #FFFFFF;
+  --warna-pemutar: #0B2540;
+
+  /* Tipografi */
+  --font-utama: 'Plus Jakarta Sans', Arial, sans-serif;
+  --teks-layar: 22px;   /* judul layar */
+  --teks-karya: 18px;   /* judul karya unggulan */
+  --teks-bagian: 16px;  /* judul bagian */
+  --teks-isi: 14px;     /* teks isi */
+  --teks-ket: 12px;     /* keterangan */
+
+  /* Jarak */
+  --jarak-1: 4px;
+  --jarak-2: 8px;
+  --jarak-3: 12px;
+  --jarak-4: 16px;
+  --jarak-5: 24px;
+  --jarak-6: 32px;
+
+  /* Sudut */
+  --sudut-kecil: 8px;
+  --sudut-sedang: 12px;
+  --sudut-besar: 16px;
+  --sudut-pil: 999px;
+
+  /* Ukuran tata letak */
+  --tinggi-nav: 72px;
+  --lebar-maks: 480px;
+}

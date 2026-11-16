@@ -1,0 +1,175 @@
+/* ==========================================================
+   Gaya khusus layar Detail Karya — Galeri Karya STMM
+   ========================================================== */
+
+/* Pemutar video YouTube / Media preview */
+.detail-pemutar {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: var(--warna-pemutar);
+  border-radius: var(--sudut-besar);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--warna-putih);
+}
+
+.detail-pemutar iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.detail-pemutar__putar {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--sudut-pil);
+  background: var(--warna-putih);
+  color: var(--warna-tua);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+  border: none;
+  padding: 0;
+}
+
+.detail-pemutar__putar svg {
+  margin-left: 3px; /* Penyelarasan visual segitiga putar */
+}
+
+.detail-pemutar__putar:hover {
+  transform: scale(1.05);
+}
+
+.detail-pemutar__keterangan {
+  position: absolute;
+  bottom: var(--jarak-3);
+  left: var(--jarak-3);
+  font-size: var(--teks-ket);
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  pointer-events: none;
+}
+
+/* Chip Kategori & Genre pada layar detail */
+.deret-chip .chip {
+  height: 36px;
+}
+
+.chip--genre {
+  background: #F1F5F9;
+  color: #475569;
+}
+
+/* Judul karya */
+.detail-judul {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--warna-teks);
+  line-height: 1.25;
+}
+
+/* Kartu Kreator */
+.detail-kreator {
+  display: flex;
+  align-items: center;
+  gap: var(--jarak-3);
+  padding: var(--jarak-3) var(--jarak-4);
+  background: var(--warna-latar-lembut);
+  border-radius: var(--sudut-sedang);
+}
+
+.detail-kreator__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--sudut-pil);
+  background: var(--warna-utama);
+  color: var(--warna-putih);
+  font-size: 15px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+.detail-kreator__info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.detail-kreator__nama {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--warna-teks);
+}
+
+.detail-kreator__sub {
+  font-size: var(--teks-ket);
+  color: var(--warna-redup);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.detail-kreator__profil {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--warna-utama);
+  text-decoration: none;
+  padding: var(--jarak-1) var(--jarak-2);
+}
+
+.detail-kreator__profil:hover {
+  text-decoration: underline;
+}
+
+/* Kotak Info Metadata (Tahun, Durasi, Mata Kuliah) */
+.detail-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--jarak-2);
+}
+
+.detail-meta-box {
+  border: 1px solid var(--warna-garis);
+  border-radius: var(--sudut-sedang);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--warna-putih);
+}
+
+.detail-meta-box__label {
+  font-size: 11px;
+  color: var(--warna-redup);
+  font-weight: 600;
+}
+
+.detail-meta-box__nilai {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--warna-teks);
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+/* Tombol Aksi */
+.detail-aksi {
+  display: flex;
+  gap: var(--jarak-3);
+}
+
+.detail-aksi .tombol {
+  flex: 1;
+}

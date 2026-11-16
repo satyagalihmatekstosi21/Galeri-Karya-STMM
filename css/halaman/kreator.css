@@ -1,0 +1,102 @@
+/* ==========================================================
+   Gaya khusus layar Profil Kreator - Galeri Karya STMM
+   ========================================================== */
+
+/* Hero banner profil berlatar biru */
+.kreator-hero {
+  background: var(--warna-tua);
+  color: var(--warna-putih);
+  padding-bottom: 52px;
+}
+
+.kreator-hero .bilah-atas {
+  color: var(--warna-putih);
+}
+
+.kreator-hero .ikon-tombol {
+  color: var(--warna-putih);
+}
+
+.kreator-hero__badan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--jarak-2);
+  padding: 0 var(--jarak-4);
+}
+
+/* Avatar bundar berbingkai emas */
+.kreator-hero__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: var(--sudut-pil);
+  background: var(--warna-putih);
+  color: var(--warna-tua);
+  border: 4px solid var(--warna-aksen);
+  font-size: 28px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.kreator-hero__nama {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--warna-putih);
+  line-height: 1.2;
+}
+
+.kreator-hero__sub {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Kartu statistik mengambang (floating stats) */
+.kreator-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--jarak-3);
+  padding: 0 var(--jarak-4);
+  margin-top: -36px;
+  position: relative;
+  z-index: 2;
+}
+
+.kreator-stats__kartu {
+  background: var(--warna-putih);
+  border-radius: var(--sudut-sedang);
+  padding: var(--jarak-3) var(--jarak-2);
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.kreator-stats__nilai {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--warna-utama);
+  line-height: 1.2;
+}
+
+.kreator-stats__label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--warna-redup);
+}
+
+/* Area konten utama kreator */
+.kreator-konten {
+  display: flex;
+  flex-direction: column;
+  gap: var(--jarak-5);
+  padding: var(--jarak-5) var(--jarak-4) var(--jarak-6);
+}

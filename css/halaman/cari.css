@@ -1,0 +1,148 @@
+/* ==========================================================
+   Gaya khusus layar Cari Karya - Galeri Karya STMM
+   ========================================================== */
+
+/* Bilah input pencarian */
+.cari-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--warna-putih);
+  border: 1.5px solid #CFE3F1;
+  border-radius: var(--sudut-sedang);
+  padding: 0 var(--jarak-3);
+  height: 48px;
+  gap: var(--jarak-2);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cari-bar:focus-within {
+  border-color: var(--warna-utama);
+  box-shadow: 0 0 0 3px rgba(1, 121, 187, 0.12);
+}
+
+.cari-bar__ikon {
+  color: var(--warna-utama);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.cari-bar__input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: var(--teks-isi);
+  color: var(--warna-teks);
+  outline: none;
+  min-width: 0;
+}
+
+.cari-bar__input::placeholder {
+  color: var(--warna-redup);
+}
+
+/* Tombol hapus pencarian */
+.cari-bar__hapus {
+  border: none;
+  background: transparent;
+  color: var(--warna-redup);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cari-bar__hapus:hover {
+  color: var(--warna-teks);
+}
+
+/* Deret chip pencarian */
+.deret-chip--cari {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  gap: var(--jarak-2);
+  padding-bottom: 2px;
+}
+
+.deret-chip--cari::-webkit-scrollbar {
+  display: none;
+}
+
+.deret-chip--cari .chip {
+  flex: none;
+}
+
+.deret-chip--cari .chip--garis[aria-pressed="true"] {
+  background: var(--warna-utama);
+  color: var(--warna-putih);
+  border-color: var(--warna-utama);
+}
+
+/* Keterangan sub-judul seksi */
+.cari-subjudul {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--warna-redup);
+  margin-top: calc(var(--jarak-1) * -1);
+}
+
+/* Daftar hasil pencarian horisontal */
+.cari-daftar {
+  display: flex;
+  flex-direction: column;
+}
+
+.cari-item {
+  display: flex;
+  align-items: center;
+  gap: var(--jarak-3);
+  padding: var(--jarak-3) 0;
+  border-bottom: 1px solid #F1F5F9;
+  text-decoration: none;
+  color: var(--warna-teks);
+  transition: opacity 0.15s ease;
+}
+
+.cari-item:active {
+  opacity: 0.7;
+}
+
+.cari-item__thumb {
+  width: 58px;
+  height: 58px;
+  border-radius: var(--sudut-sedang);
+  background: var(--kat-bg, var(--warna-latar));
+  color: var(--kat-fg, var(--warna-tua));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cari-item__info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cari-item__judul {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--warna-teks);
+  line-height: 1.3;
+}
+
+.cari-item__sub {
+  font-size: 13px;
+  color: var(--warna-redup);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
